@@ -3,6 +3,7 @@ ngraph.physics.primitives
 
 Module with basic 2d physics primitives for ngraph. It defines interface for physical bodies, used in [n-body](https://github.com/anvaka/ngraph.quadtreebh) simulation.
 
+[![build status](https://secure.travis-ci.org/anvaka/ngraph.physics.primitives.png)](http://travis-ci.org/anvaka/ngraph.physics.primitives)
 Examples
 ========
 
