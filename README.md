@@ -12,6 +12,7 @@ var physics = requrie('ngraph.physics.primitives');
 var body = new physics.Body(); // create a new 2d body
 console.dir(body.force); //  prints force value acting on this body
 console.dir(body.pos);   // prints body's position in 2d space
+console.log(body.mass);  // prints 1. Bodies should have a mass
 
 var direction = new physics.Vector2d(); // create a 2d vector
 console.log(direction.x, direction.y); // prints 0, 0
