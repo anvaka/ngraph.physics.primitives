@@ -1,6 +1,6 @@
 {
   "name": "ngraph.physics.primitives",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Physics primitives for ngraph.* libraries",
   "main": "index.js",
   "scripts": {
