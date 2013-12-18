@@ -5,6 +5,7 @@ test('Body has properties force, pos and mass', function(t) {
   var body = new primitives.Body();
   t.ok(body.force, 'Force attribute is missing on body');
   t.ok(body.pos, 'Pos attribute is missing on body');
+  t.ok(body.velocity, 'Velocity attribute is missing on body');
   t.ok(typeof body.mass === 'number' && body.mass !== 0, 'Body should have a mass');
   t.end();
 });

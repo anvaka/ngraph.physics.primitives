@@ -7,6 +7,7 @@ module.exports = {
 function Body(x, y) {
   this.pos = new Vector2d(x, y);
   this.force = new Vector2d();
+  this.velocity = new Vector2d();
   this.mass = 1;
 }
 
