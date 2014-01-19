@@ -51,3 +51,16 @@ test('Vector3d has x and y and z', function(t) {
   t.equal(badInput.z, 0, 'Vector should be resilient to bed input');
   t.end();
 });
+
+test('reset vector', function(t) {
+  var v3 = new primitives.Vector3d(1, 2, 3);
+  v3.reset();
+  t.equal(v3.x, 0, 'Reset to 0');
+  t.equal(v3.y, 0, 'Reset to 0');
+  t.equal(v3.z, 0, 'Reset to 0');
+  var v2 = new primitives.Vector2d(1, 2);
+  v2.reset();
+  t.equal(v2.x, 0, 'Reset to 0');
+  t.equal(v2.y, 0, 'Reset to 0');
+  t.end();
+})

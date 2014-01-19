@@ -17,6 +17,10 @@ function Vector2d(x, y) {
   this.y = typeof y === 'number' ? y : 0;
 }
 
+Vector2d.prototype.reset = function () {
+  this.x = this.y = 0;
+}
+
 function Body3d(x, y, z) {
   this.pos = new Vector3d(x, y, z);
   this.force = new Vector3d();
@@ -28,4 +32,8 @@ function Vector3d(x, y, z) {
   this.x = typeof x === 'number' ? x : 0;
   this.y = typeof y === 'number' ? y : 0;
   this.z = typeof z === 'number' ? z : 0;
+}
+
+Vector3d.prototype.reset = function () {
+  this.x = this.y = this.z = 0;
 }
