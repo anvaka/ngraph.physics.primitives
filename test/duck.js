@@ -63,4 +63,13 @@ test('reset vector', function(t) {
   t.equal(v2.x, 0, 'Reset to 0');
   t.equal(v2.y, 0, 'Reset to 0');
   t.end();
-})
+});
+
+test('vector can use copy constructor', function(t) {
+  var a = new primitives.Vector3d(1, 2, 3);
+  var b = new primitives.Vector3d(a);
+  t.equal(b.x, a.x, 'Value copied');
+  t.equal(b.y, a.y, 'Value copied');
+  t.equal(b.z, a.z, 'Value copied');
+  t.end();
+});
