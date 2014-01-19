@@ -7,6 +7,7 @@ module.exports = {
 
 function Body(x, y) {
   this.pos = new Vector2d(x, y);
+  this.prevPos = new Vector2d(x, y);
   this.force = new Vector2d();
   this.velocity = new Vector2d();
   this.mass = 1;
@@ -23,6 +24,7 @@ Vector2d.prototype.reset = function () {
 
 function Body3d(x, y, z) {
   this.pos = new Vector3d(x, y, z);
+  this.prevPos = new Vector3d(x, y, z);
   this.force = new Vector3d();
   this.velocity = new Vector3d();
   this.mass = 1;
