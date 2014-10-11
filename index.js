@@ -13,6 +13,11 @@ function Body(x, y) {
   this.mass = 1;
 }
 
+Body.prototype.setPosition = function (x, y) {
+  this.prevPos.x = this.pos.x = x;
+  this.prevPos.y = this.pos.y = y;
+};
+
 function Vector2d(x, y) {
   if (x && typeof x !== 'number') {
     // could be another vector
@@ -35,6 +40,12 @@ function Body3d(x, y, z) {
   this.velocity = new Vector3d();
   this.mass = 1;
 }
+
+Body3d.prototype.setPosition = function (x, y, z) {
+  this.prevPos.x = this.pos.x = x;
+  this.prevPos.y = this.pos.y = y;
+  this.prevPos.z = this.pos.z = z;
+};
 
 function Vector3d(x, y, z) {
   if (x && typeof x !== 'number') {

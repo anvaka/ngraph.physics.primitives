@@ -73,3 +73,27 @@ test('vector can use copy constructor', function(t) {
   t.equal(b.z, a.z, 'Value copied');
   t.end();
 });
+
+test('Body3d can set position', function(t) {
+  var body = new primitives.Body3d();
+  body.setPosition(10, 11, 12);
+  t.equal(body.pos.x, 10, 'x is correct');
+  t.equal(body.pos.y, 11, 'y is correct');
+  t.equal(body.pos.z, 12, 'z is correct');
+  t.equal(body.prevPos.x, 10, 'prev x is correct');
+  t.equal(body.prevPos.y, 11, 'prev y is correct');
+  t.equal(body.prevPos.z, 12, 'prev z is correct');
+
+  t.end();
+});
+
+test('Body can set position', function(t) {
+  var body = new primitives.Body();
+  body.setPosition(10, 11);
+  t.equal(body.pos.x, 10, 'x is correct');
+  t.equal(body.pos.y, 11, 'y is correct');
+  t.equal(body.prevPos.x, 10, 'prev x is correct');
+  t.equal(body.prevPos.y, 11, 'prev y is correct');
+
+  t.end();
+});
