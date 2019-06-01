@@ -1,6 +1,6 @@
 {
   "name": "ngraph.physics.primitives",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "description": "Physics primitives for ngraph.* libraries",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,6 @@
     "url": "https://github.com/anvaka/ngraph.physics.primitives/issues"
   },
   "devDependencies": {
-    "tap": "~0.4.4"
+    "tap": "^14.2.0"
   }
 }
